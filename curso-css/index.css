@@ -1,0 +1,57 @@
+/* Css perteneciente a selectores*/
+h1{
+  color: red;
+}
+
+span h2 {
+  color: blue;
+  background-color: gray;
+}
+
+#colores > ul > li{ /*Los elementos padres tienen
+   mas poder que sus hijos y nietos*/
+  background-color: yellow;
+  color:red;
+  font-size: 2em;
+}
+
+#naranja{
+  color: orange;
+}
+
+#rojo{
+  color: red;
+}
+
+#amarillo{
+  color: yellow;
+}
+
+a[href = "codigofacilito.com"][target]{ /*Esto es un selector
+  de atributos multiples*/
+  color: red;
+}
+
+/*Css perteneciente al index*/
+
+/*Colores a utilizar:
+  dark liver: #50514F
+  sunset orange: #F25F5C
+  mustard: #FFE066
+  lapis lazuli: #247BA0
+  green sheen: #70C1B3
+*/
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-background{
+  background-color: #FFE066;
+  color: #50514F;
+
+}
+
+.main-card{
+
+}

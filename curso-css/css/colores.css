@@ -1,0 +1,12 @@
+/*Colores en css*/
+
+h1{
+  background-color: cyan;
+  color: darkblue;
+}
+
+/*HSL
+  -MATIZ (0-360)
+  -SATURACION (0% GRIS - 100% COLOR) <-PORCENTAJE
+  -LUMINOCIDAD (0% NEGRO - 100% BLANCO) <- PORCENTAJE
+*/

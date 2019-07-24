@@ -1,0 +1,91 @@
+/*Existen 2 tipos de etiquetas:
+  -Etiquetas de bloque (Generan una nueva linea)
+  -Etiquetas de linea (Se quedan en la linea)
+
+
+  Existen 4 tipos de Posiciones
+  -static <-Es el valor por default
+
+  -relative <-Se comporta igual que static a menos
+  que le digas que hacer, se posicionara relativamente de
+  a cuerdo a su posicion inicial
+
+  -fixed <-Tendra una posicion relativa al viewport(area visible de la
+  webpage) y se quedara siempre fijo aun cuando se le de scroll a la
+  pagina
+
+  -absolute <-Se comporta como un fixed pero no se queda
+  pegado a la ventana del nabvegador, se queda pegado
+  a su padre
+  */
+
+
+  /*Colores a utilizar:
+    dark liver: #50514F
+    sunset orange:
+    mustard: #FFE066
+    lapis lazuli: #247BA0
+    green sheen: #70C1B3
+  */
+
+.main-Background{
+  background-color: white;
+
+}
+
+.box{
+  height: 600px;
+  width: auto;
+
+  border-style: solid;
+  border-color: #50514F;
+  border-radius: 3em;
+  border-width: 8px;
+  padding: 0px;
+  margin-bottom: 10px;
+
+  position: relative;
+
+}
+
+.description{
+  text-align: center;
+}
+
+.profile-pic{
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.centrado-relative{
+  border-radius: 3em;
+  position: relative;
+  margin: 200px auto; /*Auto nos centra nuestro div horizontalmente */
+  height: 100px;
+  width: 100px;
+  background-color: #F25F5C;
+}
+
+.asphalt-pic{
+  width: 250px;
+  height: auto;
+  margin-top: 500px;
+  border-radius: 20px;
+}
+
+.thumb{
+  margin: 10px;
+  border: solid gray 10px;
+  width: 150px;
+  height: auto;
+}
+
+.thumb:hover{
+  width: 110%;
+  box-shadow: 0 5px 5px rgba(0, 140, 186, 1);
+}

@@ -1,0 +1,17 @@
+body{
+  background-image: url("../assets/images/locator.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100px 100px;
+
+  /*background: linear-gradient(to bottom, red,yellow);*/
+  /*background: linear-gradient(0deg, rgba(255, 0, 0, .5), yellow);*/
+  /*background: repeating-linear-gradient(45grad, red, blue 20%);*/
+  background: radial-gradient(circle, red 5%, yellow 10%, blue 20%);
+
+}
+
+.espacio{
+  height: 500px;
+}

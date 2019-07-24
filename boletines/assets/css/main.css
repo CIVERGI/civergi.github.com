@@ -16,6 +16,10 @@ html {
   color: #2D2D2A;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
   color: #ef645f;
@@ -67,13 +71,15 @@ a:hover {
   max-width: 960px;
   max-height: 500px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: white;
   /*box-shadow: diferenciaHorizontal diferenciaVertical desenfoque amplitud color */
   box-shadow: 0px 3px 6PX rgba(0, 0, 0, 0.16), 0px 3px 6PX rgba(0, 0, 0, 0.23);
   border-radius: 4px;
   position: relative;
-  padding: 2em;
+  padding: 1.8em;
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 .actions {
@@ -100,7 +106,6 @@ a:hover {
 .table {
   width: 100%;
   border-spacing: 0;
-  min-width: 800px;
 }
 
 .table td, .table th {
@@ -139,6 +144,8 @@ a:hover {
   font-weight: bold;
   color: #ef645f;
   font-size: 1.2em;
+  margin-top: 1em;
+  display: inline-block;
 }
 
 .main-image {
@@ -155,12 +162,6 @@ a:hover {
   margin-right: .5em;
 }
 
-@media (max-width: 900px) {
-  .content {
-    overflow-x: scroll;
-    width: 80%;
-  }
-}
 
 .square {
   background-color: red;
@@ -176,4 +177,33 @@ a:hover {
   height: 50px;
   width: 50px;
   position: absolute;
+}
+
+@media (max-width:600px) {
+  .content{
+    padding: 1em;
+    overflow-x: hidden;
+  }
+  td{
+    display: block;
+    width: 100%;
+  }
+
+  td:nth-of-type(1){
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#ef645f;
+
+  }
+
+  th{
+    display: none;
+  }
+}
+
+@media (min-height:550px) {
+  .content{
+    height: 550px;
+  }
+
 }

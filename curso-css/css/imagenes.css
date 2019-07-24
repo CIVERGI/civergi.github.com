@@ -1,0 +1,96 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.responsive{
+  /*Adaptamos nuestras imagenes a cualquier dispositivo
+  Se usan los porcentajes**/
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+/*Emulamos una foto de una camara*/
+div.contenedor-frame{
+  display: inline-block;
+  width: 300px;
+  height: 400px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px 15px grey;
+  display: inline-block;
+  margin: 20px;
+  position: relative;
+
+}
+
+.contenedor-frame:hover{
+  /*Ahora vamos a probar las transformaciones*/
+  /*transform: translate(20px, 50px); */
+  transform: scale(1.5,1.5);
+  transition: transform .5s;
+  transition-delay: .1s;
+}
+
+
+
+img.contenedor-pic{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.descripcion-foto{
+  text-align: center;
+}
+
+.filtro{
+  /*opacity: .5;*/
+  /*filter: brightness(.6);*/
+}
+
+.filtro:hover{
+  /*opacity: 1;*/
+  filter: grayscale(.5);
+  cursor: wait;
+}
+
+.position-text{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.cuadrado{
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: red;
+
+  border-radius: 20px;
+  transition-duration: .5s;
+  transition-delay: .02s;
+}
+
+.cuadrado:hover{
+  border-radius: 50%;
+  transition-duration: .5s;
+  transition-delay: .02s;
+  animation-name: ejemplo;
+  animation-duration: .5s;
+}
+
+@keyframes ejemplo {
+
+  50% {
+    background-color: yellow
+  }
+
+
+  100% {
+    background-color: red
+  }
+
+}

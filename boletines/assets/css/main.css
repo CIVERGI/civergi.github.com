@@ -78,8 +78,7 @@ a:hover {
   border-radius: 4px;
   position: relative;
   padding: 1.8em;
-  overflow-y: scroll;
-  overflow-x: scroll;
+  overflow: auto;
 }
 
 .actions {
